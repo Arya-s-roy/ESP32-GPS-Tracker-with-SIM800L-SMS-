@@ -28,6 +28,16 @@ void sendSMS(String lat, String lon) {
   sim800.println("AT+CMGF=1");
   delay(500);
   sim800.println("AT+CMGS=\"+1234567890\"");
+  delay(500);
+  sim800.print("Emergency! Location: https://maps.google.com/?q=");
+  sim800.print(lat);
+  sim800.print(",");
+  sim800.println(lon);
+  sim800.write(26);
+  delay(5000);
+}
+
+
 
 
 
