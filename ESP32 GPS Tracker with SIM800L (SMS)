@@ -8,5 +8,10 @@ void setup() {
   neogps.begin(9600, SERIAL_8N1, 16, 17); // GPS pins
   sim800.begin(9600, SERIAL_8N1, 26, 27); // SIM800L pins
 
+  Serial.println("GPS + SIM800L Tracker");
+}
+
+
+
 
 
