@@ -1,4 +1,7 @@
 #include <TinyGPS++.h>
 #include <HardwareSerial.h>
+TinyGPSPlus gps;
+HardwareSerial neogps(1);
+HardwareSerial sim800(2);
 
 
