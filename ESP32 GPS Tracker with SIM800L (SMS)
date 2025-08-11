@@ -24,6 +24,11 @@ void loop() {
   }
 }
 
+void sendSMS(String lat, String lon) {
+  sim800.println("AT+CMGF=1");
+  delay(500);
+  sim800.println("AT+CMGS=\"+1234567890\"");
+
 
 
 
