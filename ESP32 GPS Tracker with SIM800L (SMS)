@@ -17,6 +17,13 @@ void loop() {
       String lat = String(gps.location.lat(), 6);
       String lon = String(gps.location.lng(), 6);
 
+      Serial.println("Location: " + lat + ", " + lon);
+      sendSMS(lat, lon);
+      delay(10000);
+    }
+  }
+}
+
 
 
 
