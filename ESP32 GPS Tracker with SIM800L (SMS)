@@ -3,5 +3,10 @@
 TinyGPSPlus gps;
 HardwareSerial neogps(1);
 HardwareSerial sim800(2);
+void setup() {
+  Serial.begin(115200);
+  neogps.begin(9600, SERIAL_8N1, 16, 17); // GPS pins
+  sim800.begin(9600, SERIAL_8N1, 26, 27); // SIM800L pins
+
 
 
